@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./foodDetails.module.css";
 import Ingredients from "./Ingredients";
+const apiKey = import.meta.env.VITE_API_KEY;
 
 export default function FoodDetails({ foodId, setFoodId }) {
   const [recepie, setRecepie] = useState({});
@@ -8,7 +9,7 @@ export default function FoodDetails({ foodId, setFoodId }) {
   //console.log(typeof foodId);
   //console.log(foodId);
   const URL = `https://api.spoonacular.com/recipes/${foodId}/information`;
-  const API_KEY = "e5c21c8eb4c2444586205c4ddb4898f4";
+  const API_KEY = apiKey;
   useEffect(() => {
     async function fetchRecepie() {
       const response = await fetch(`${URL}?apiKey=${API_KEY}`);
