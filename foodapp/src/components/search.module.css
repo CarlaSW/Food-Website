@@ -1,0 +1,17 @@
+.searchContainer {
+  background-color: aqua;
+  height: 50px;
+  margin: 20px auto;
+  position: relative;
+  width: 400px;
+}
+
+.searchBar {
+  font-size: 25px;
+  border: none;
+  border-bottom: 1px solid rgb(229, 220, 220);
+  width: 100%;
+  padding: 20px;
+  outline: none;
+  background-color: rgb(248, 246, 246);
+}
